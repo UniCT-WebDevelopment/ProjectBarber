@@ -1,0 +1,75 @@
+body, html{
+    height: 100%;
+    margin: 0px;
+}
+
+.panel{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(71,71,71);
+}
+
+.hours-panel{
+    position: absolute;
+    top: 20%;
+    height: 60%;
+    width: 60%;
+    left: 20%;
+    border-radius: 10px 10px 10px 10px;
+    border-top: 5px solid rgb(114, 135, 253);
+    border-bottom: 5px solid rgb(114, 135, 253);
+}
+
+.table-hours{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top:10%;
+}
+
+.td-hour{
+    text-align: center;
+    padding: 5px;
+}
+
+.hour-free, .hour{
+    color: rgb(81, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 6px 6px 6px 6px;
+    border-style:double;
+    border-color: rgb(114, 135, 253);
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.hour{
+    color:rgb(255, 0, 0);
+}
+
+/** for smartphone**/
+@media only screen and (max-width: 768px) {
+
+.hours-panel{
+    width: 100%;
+    left: 0px;
+}
+
+.table-hours{
+    left: 0px;
+    width: 100%;
+}
+
+.td-hour{
+    padding-left:1px;
+    padding-right: 1px;
+
+}
+}
+
